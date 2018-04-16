@@ -1,0 +1,24 @@
+{
+  "name": "seedom-badger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seedom-io/seedom-badger.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seedom-io/seedom-badger/issues"
+  },
+  "homepage": "https://github.com/seedom-io/seedom-badger#readme",
+  "devDependencies": {
+    "canvas": "^2.0.0-alpha.12",
+    "express": "^4.16.3",
+    "request": "^2.85.0"
+  }
+}
