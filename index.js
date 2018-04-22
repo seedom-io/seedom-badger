@@ -38,7 +38,7 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
     const causes = await web3.causes(deployments);
 
     // set up endpoint
-    app.get('/:fundraiser([a-zA-Z0-9]*)/:participant([a-zA-Z0-9]*).png', async (request, response) => {
+    app.get('/badges/:fundraiser([a-zA-Z0-9]*)/:participant([a-zA-Z0-9]*).png', async (request, response) => {
 
         const fundraiserAddress = `0x${request.params.fundraiser}`;
         // verify we have fundraiser

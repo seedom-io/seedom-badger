@@ -13,4 +13,4 @@
 
 ## Testing
 - Run locally
-- Go to `https://localhost:3000/<contractAddress>/<participantAddress>`
+- Go to `https://localhost:3000/badges/<contractAddress>/<participantAddress>`
