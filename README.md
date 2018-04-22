@@ -4,7 +4,7 @@
 
 ## Running locally
 - Clone this repo
-- Run `node ./index.js [network]`
+- Run `NETWORK=<network> node ./index.js`
 
 ## Distribution
 - Clone this repo

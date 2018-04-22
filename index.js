@@ -26,8 +26,8 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
     // download badge image
     const badgeImage = await download.image(badgeUrl);
     // load configs
-    const networks = await file.readJson('./networks.json');
-    const deployments = await file.readJson('./deployments.json');
+    const networks = await file.readJson('./config/networks.json');
+    const deployments = await file.readJson('./config/deployments.json');
     // create fundraiser
     const fundraiser = web3.fundraiser(networks, deployments);
     // get deployment
