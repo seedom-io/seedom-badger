@@ -1,0 +1,11 @@
+{
+    "localhost": {
+        "url": "ws://localhost:8546"
+    },
+    "mainnet": {
+        "url": "wss://manager1.seedom.io:8550"
+    },
+    "ropsten": {
+        "url": "wss://manager1.seedom.io:8548"
+    }
+}

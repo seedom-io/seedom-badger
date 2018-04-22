@@ -16,9 +16,13 @@
     "url": "https://github.com/seedom-io/seedom-badger/issues"
   },
   "homepage": "https://github.com/seedom-io/seedom-badger#readme",
-  "devDependencies": {
+  "dependencies": {
     "canvas": "^2.0.0-alpha.12",
     "express": "^4.16.3",
-    "request": "^2.85.0"
+    "request": "^2.85.0",
+    "web3": "1.0.0-beta.33"
+  },
+  "scripts": {
+    "dist": "node ./dist.js"
   }
 }
