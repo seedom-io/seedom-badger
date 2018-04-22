@@ -1,8 +1,7 @@
 const express = require('express');
 const app = express();
-const moment = require('moment-timezone');
-const download = require('./lib/download');
 const file = require('./lib/file');
+const download = require('./lib/download');
 const web3 = require('./lib/web3');
 const bytes = require('./lib/bytes');
 const draw = require('./lib/draw');
@@ -15,8 +14,10 @@ const canvasH = 628;
 
 // base urls
 const badgeUrl = 'https://raw.githubusercontent.com/seedom-io/seedom-assets/master/badge/seedom-badge.png';
-const causeImageUrlTemplate = 'https://raw.githubusercontent.com/seedom-io/seedom-assets/master/causes/{cause}.png';
-const causeJsonUrlTemplate = 'https://raw.githubusercontent.com/seedom-io/seedom-assets/master/causes/{cause}.json';
+
+// create circles
+const topCircle = circles.get(586, canvasW, canvasH);
+const bottomCircle = circles.get(606, canvasW, canvasH);
 
 // register font
 registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
@@ -26,39 +27,58 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
     // download badge image
     const badgeImage = await download.image(badgeUrl);
     // load configs
-    const networks = await file.readJson('./config/networks.json');
-    const deployments = await file.readJson('./config/deployments.json');
-    // create fundraiser
-    const fundraiser = web3.fundraiser(networks, deployments);
-    // get deployment
-    const deployment = await fundraiser.methods.deployment().call();
-    // get cause and cause url
-    const cause = deployment._cause.toLowerCase();
-    const causeImageUrl = causeImageUrlTemplate.replace('{cause}', cause);
-    const causeImage = await download.image(causeImageUrl);
-    const causeJsonUrl = causeJsonUrlTemplate.replace('{cause}', cause);
-    const causeJson = await download.json(causeJsonUrl);
-    const causeTaglineText = `${causeJson.tagline.toUpperCase()}!`;
-    // get end time
-    const endTime = moment(deployment._endTime * 1000).tz('America/New_York');
-    const endTimeTopText = endTime.format('LL');
-    const endTimeBottomText = endTime.format('ha z');
+    const config = {
+        networks: await file.readJson('./config/networks.json'),
+        deployments: await file.readJson('./config/deployments.json')
+    };
+
+    // get fundraisers, deployments, and causes
+    const fundraisers = web3.fundraisers(config);
+    const deployments = await web3.deployments(fundraisers);
+    const causes = await web3.causes(deployments);
 
     // set up endpoint
-    app.get('/:participant([a-zA-Z0-9]*)', async (request, response) => {
+    app.get('/:fundraiser([a-zA-Z0-9]*)/:participant([a-zA-Z0-9]*).png', async (request, response) => {
+
+        const fundraiserAddress = `0x${request.params.fundraiser}`;
+        // verify we have fundraiser
+        if (!(fundraiserAddress in fundraisers)) {
+            response.status(404).send("fundraiser not found");
+            return;
+        }
+        // verify we have deployment
+        if (!(fundraiserAddress in deployments)) {
+            response.status(404).send("deployment not found");
+            return;
+        }
+        // verify we have cause
+        if (!(fundraiserAddress in causes)) {
+            response.status(404).send("cause not found");
+            return;
+        }
+
+        // get fundraiser, deployment, and cause
+        const fundraiser = fundraisers[fundraiserAddress];
+        const deployment = deployments[fundraiserAddress];
+        const cause = causes[fundraiserAddress];
+        
+        // get requested participant & message
+        const participantAddress = `0x${request.params.participant}`;
+        const participant = await fundraiser.methods.participants(participantAddress).call();
+        if (participant._entries == 0) {
+            res.status(404).send("participant not found");
+            return;
+        }
+
+        // get participant message
+        const participantMessage = bytes.string(participant._message);
+
         // setup canvas
         const canvas = createCanvas(canvasW, canvasH);
-        var context = canvas.getContext('2d');
-    
+        const context = canvas.getContext('2d');
         // draw badge & cause
         context.drawImage(badgeImage, 0, 0, badgeImage.width, badgeImage.height);
-        context.drawImage(causeImage, 412, 115, causeImage.width, causeImage.height);
-
-        // get requested participant & message
-        const participant = await fundraiser.methods.participants(
-            `0x${request.params.participant.toLowerCase()}`
-        ).call();
-        const participantMessage = bytes.string(participant._message);
+        context.drawImage(cause.image, 412, 115, cause.image.width, cause.image.height);
 
         // draw participant message
         context.fillStyle = 'white';
@@ -67,16 +87,14 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
 
         // draw deployment end time
         context.textAlign = 'right'; 
-        context.fillText(endTimeTopText, 1174, 556);
-        context.fillText(endTimeBottomText, 1174, 596);
+        context.fillText(deployment.endTime.top, 1174, 556);
+        context.fillText(deployment.endTime.bottom, 1174, 596);
 
         // draw circle texts
         context.fillStyle = 'white';
         context.font = '46px CamphorPro';
-        let circle = circles.get(586, canvasW, canvasH);
-        draw.circleText(context, 'I HELPED', circle, 0, 'center', 46, true, 0);
-        circle = circles.get(606, canvasW, canvasH);
-        draw.circleText(context, causeTaglineText, circle, 180, 'center', 46, false, 0);
+        draw.circleText(context, 'I HELPED', topCircle, 0, 'center', 46, true, 0);
+        draw.circleText(context, cause.tagline, bottomCircle, 180, 'center', 46, false, 0);
 
         // pipe back out
         const stream = canvas.createPNGStream();

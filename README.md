@@ -10,3 +10,7 @@
 - Clone this repo
 - Run `npm run dist`
 - Push and deploy to swarm
+
+## Testing
+- Run locally
+- Go to `https://localhost:3000/<contractAddress>/<participantAddress>`
