@@ -5,5 +5,5 @@ const writeJsonFile = (file, obj) => {
     fs.writeFileSync(file, JSON.stringify(obj, null, 4), 'utf8');
 };
 
-writeJsonFile('./networks.json', loader.getNetworks());
-writeJsonFile('./deployments.json', loader.getDeployments());
+writeJsonFile('./config/networks.json', loader.getNetworks());
+writeJsonFile('./config/deployments.json', loader.getDeployments());

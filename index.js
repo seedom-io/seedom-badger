@@ -15,6 +15,9 @@ const canvasH = 628;
 // base urls
 const badgeUrl = 'https://raw.githubusercontent.com/seedom-io/seedom-assets/master/badge/seedom-badge.png';
 
+// filename
+const fileName = "badge.png";
+
 // create circles
 const topCircle = circles.get(586, canvasW, canvasH);
 const bottomCircle = circles.get(606, canvasW, canvasH);
@@ -66,7 +69,7 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
         const participantAddress = `0x${request.params.participant}`;
         const participant = await fundraiser.methods.participants(participantAddress).call();
         if (participant._entries == 0) {
-            res.status(404).send("participant not found");
+            response.status(404).send("participant not found");
             return;
         }
 
@@ -98,6 +101,7 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
 
         // pipe back out
         const stream = canvas.createPNGStream();
+        response.set('Content-Disposition', `attachment;filename=${fileName}`);
         response.type('png');
         stream.pipe(response);
     });
