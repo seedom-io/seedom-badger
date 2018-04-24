@@ -1,16 +1,17 @@
-## Dependencies
+## General dependencies
 - NodeJS v8.6.0+
+
+## Seedom dependencies
 - seedom-solidity
+- seedom-crypter
 
-## Running locally
-- Clone this repo
-- Run `NETWORK=<network> node ./index.js`
+## Run locally
+- `NETWORK=<network> node ./index.js`
 
-## Distribution
-- Clone this repo
+## Prepare distribution
 - Run `npm run dist`
 - Push and deploy to swarm
 
 ## Testing
-- Run locally
-- Go to `https://localhost:3000/badges/<contractAddress>/<participantAddress>.png`
+- run locally
+- open `https://localhost:3000/badges/<contractAddress>/<participantAddress>.png`
