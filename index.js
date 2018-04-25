@@ -5,7 +5,7 @@ const download = require('./lib/download');
 const web3 = require('./lib/web3');
 const draw = require('./lib/draw');
 const circles = require('./lib/circles');
-const messages = require('../seedom-crypter/messages');
+const messages = require('@seedom-io/seedom-crypter/messages');
 const { createCanvas, loadImage, registerFont } = require('canvas');
 
 // size

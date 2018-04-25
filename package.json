@@ -11,7 +11,6 @@
     "type": "git",
     "url": "git+https://github.com/seedom-io/seedom-badger.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/seedom-io/seedom-badger/issues"
@@ -24,6 +23,7 @@
     "mz": "^2.7.0",
     "mz-modules": "^2.0.0",
     "request": "^2.85.0",
-    "web3": "1.0.0-beta.34"
+    "web3": "1.0.0-beta.34",
+    "@seedom-io/seedom-crypter": "^1.0.0"
   }
 }
