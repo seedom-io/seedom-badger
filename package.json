@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dist": "node ./dist.js",
-    "dev": "npm run dist && NETWORK=localhost node ./index.js"
+    "dev": "npm run dist && node ./index.js"
   },
   "repository": {
     "type": "git",

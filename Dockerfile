@@ -1,7 +1,5 @@
 FROM node:9
 
-ENV NETWORK="mainnet"
-
 RUN set -ex; \
 	apt-get update; \
 	apt-get install -y --no-install-recommends \
@@ -14,9 +12,9 @@ RUN set -ex; \
 
 WORKDIR /usr/src/app
 
-COPY lib ./lib
 COPY config ./config
 COPY fonts ./fonts
+COPY lib ./lib
 COPY index.js ./index.js
 COPY package.json ./package.json
 
