@@ -1,14 +1,13 @@
-## General dependencies
+## General Dependencies
 - NodeJS v8.6.0+
 
-## Seedom dependencies
+## Seedom Dependencies
 - seedom-solidity
-- seedom-crypter
 
-## Run locally
+## Run Locally
 - `node ./index.js`
 
-## Prepare distribution
+## Prepare Distribution
 - `npm run dist`
 - Push and deploy to swarm
 
