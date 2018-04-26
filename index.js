@@ -80,9 +80,17 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
         
         // get requested participant & message
         const participantAddress = `0x${request.params.participant}`;
-        const participant = await networkFundraiser.methods.participants(
-            participantAddress
-        ).call();
+        let participant;
+
+        try {
+            participant = await networkFundraiser.methods.participants(
+                participantAddress
+            ).call();
+        } catch (error) {
+            response.status(404).send("error finding participant");
+            return;
+        }
+
         if (participant._entries == 0) {
             response.status(404).send("participant not found");
             return;
