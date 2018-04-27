@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dist": "node ./dist.js",
-    "dev": "npm run dist && node ./index.js"
+    "build": "node ./build.js",
+    "prod": "node ./index.js",
+    "dev": "npm run build && npm run prod"
   },
   "repository": {
     "type": "git",
