@@ -21,4 +21,4 @@ COPY package.json ./package.json
 RUN npm install
 
 EXPOSE 3001
-CMD [ "npm", "run", "prod" ]
+CMD [ "npm", "run", "start" ]
