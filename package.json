@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node ./build.js",
+    "prod": "node ./build.js",
     "start": "node ./index.js",
-    "dev": "npm run build && npm run start"
+    "dev": "npm run prod && npm run start"
   },
   "repository": {
     "type": "git",

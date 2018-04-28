@@ -4,11 +4,11 @@
 ## Seedom Dependencies
 - seedom-solidity
 
-## Run Locally
-- `node ./index.js`
+## Run Local Development
+- `npm run dev`
 
-## Prepare Distribution
-- `npm run dist`
+## Prepare Production Release
+- `npm run prod`
 - Push and deploy to swarm
 
 ## Testing
