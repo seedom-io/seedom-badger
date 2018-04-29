@@ -26,6 +26,6 @@
     "request": "^2.85.0",
     "web3": "1.0.0-beta.34",
     "@seedom-io/seedom-crypter": "^1.0.0",
-    "@seedom-io/seedom-resolver": "^1.0.1"
+    "@seedom-io/seedom-resolver": "^1.0.2"
   }
 }

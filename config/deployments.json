@@ -2,7 +2,7 @@
     "localhost": {
         "fundraiser": [
             {
-                "address": "0x7074250D6cf2f7cda75F5795B4B9e6A27BAA12Bc",
+                "address": "0xA6C690836ADA4C134de6b937713809A1829FE193",
                 "abi": [
                     {
                         "constant": true,
@@ -65,6 +65,10 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
@@ -74,6 +78,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -257,12 +265,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -423,7 +439,7 @@
                 ]
             },
             {
-                "address": "0xC590297F6177822722084Bc702a2fbF0C22794d8",
+                "address": "0x8dDf60E00DB1db7f9370d0b88420A04C95642c26",
                 "abi": [
                     {
                         "constant": true,
@@ -486,6 +502,10 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
@@ -495,6 +515,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -678,12 +702,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -844,7 +876,7 @@
                 ]
             },
             {
-                "address": "0x40e08213aE1F64013F6e2aCC0E4B5417DF8B959a",
+                "address": "0xd442431d26adB8a2E8e200835E086a50508Bc117",
                 "abi": [
                     {
                         "constant": true,
@@ -907,6 +939,10 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
@@ -916,6 +952,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -1099,12 +1139,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -1265,7 +1313,7 @@
                 ]
             },
             {
-                "address": "0x41cfE217F3078ba360d2dd620194248Cd6bBeb51",
+                "address": "0x591aD1f36Bb5578Ea02bF05510bF79D24624026f",
                 "abi": [
                     {
                         "constant": true,
@@ -1328,6 +1376,10 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
@@ -1337,6 +1389,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -1520,12 +1576,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -1686,7 +1750,7 @@
                 ]
             },
             {
-                "address": "0x1B91b2dF42cc8750f906966202C9CFECc1849AB9",
+                "address": "0x32cD14A3709C18058DdC3984aAdDDcD5926c36ae",
                 "abi": [
                     {
                         "constant": true,
@@ -1726,12 +1790,30 @@
                         "type": "function"
                     },
                     {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_token",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "recover",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
                         "constant": true,
                         "inputs": [],
                         "name": "deployment",
                         "outputs": [
                             {
                                 "name": "_cause",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeWallet",
                                 "type": "address"
                             },
                             {
@@ -1744,6 +1826,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -1927,12 +2013,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -2093,7 +2187,7 @@
                 ]
             },
             {
-                "address": "0xED5aB761bcfEc1D89F7Fb5404b085158a557930E",
+                "address": "0x4faCe5aE5c82Ca12d1A8aDDB9dC0341440A5e871",
                 "abi": [
                     {
                         "constant": true,
@@ -2133,12 +2227,30 @@
                         "type": "function"
                     },
                     {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_token",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "recover",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
                         "constant": true,
                         "inputs": [],
                         "name": "deployment",
                         "outputs": [
                             {
                                 "name": "_cause",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeWallet",
                                 "type": "address"
                             },
                             {
@@ -2151,6 +2263,10 @@
                             },
                             {
                                 "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
                                 "type": "address"
                             },
                             {
@@ -2334,12 +2450,20 @@
                                 "type": "address"
                             },
                             {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
                                 "name": "_causeSplit",
                                 "type": "uint256"
                             },
                             {
                                 "name": "_participantSplit",
                                 "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
                             },
                             {
                                 "name": "_ownerSplit",
@@ -2502,7 +2626,7 @@
         ],
         "polling": [
             {
-                "address": "0x2441A4d2bfF1C2a5d7F49382c4Df117f959e73d6",
+                "address": "0x6b3406FF342966a450E77D477aea4AB46C826d10",
                 "abi": [
                     {
                         "constant": false,
@@ -2512,7 +2636,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2526,11 +2650,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2542,11 +2684,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2566,18 +2721,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -2599,11 +2746,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -2621,7 +2764,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -2631,10 +2774,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -2653,11 +2792,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -2666,6 +2800,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -2680,28 +2819,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],
@@ -2711,7 +2835,7 @@
                 ]
             },
             {
-                "address": "0xe45521ACd7C3BEFaa34F915155A417253c98dC35",
+                "address": "0x9547E29Fe6b10806Db1C51528A9B67AEfDa6A437",
                 "abi": [
                     {
                         "constant": false,
@@ -2721,7 +2845,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2735,11 +2859,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2751,11 +2893,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2775,18 +2930,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -2808,11 +2955,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -2830,7 +2973,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -2840,10 +2983,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -2862,11 +3001,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -2875,6 +3009,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -2889,28 +3028,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],
@@ -2920,7 +3044,7 @@
                 ]
             },
             {
-                "address": "0xd44cDE545043505Ca24A3f7a38fDF6367e69D837",
+                "address": "0x53228F279acf5c2484E8619501Dd4c2b18911518",
                 "abi": [
                     {
                         "constant": false,
@@ -2930,7 +3054,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2944,11 +3068,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2960,11 +3102,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -2984,18 +3139,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -3017,11 +3164,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3039,7 +3182,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3049,10 +3192,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -3071,11 +3210,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -3084,6 +3218,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -3098,28 +3237,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],
@@ -3129,7 +3253,7 @@
                 ]
             },
             {
-                "address": "0x6A0639F3A6b435E0abCAe6d65990000d75e74d16",
+                "address": "0x7E703F90D8E70AbA8443FA897ec117D6b8882cD2",
                 "abi": [
                     {
                         "constant": false,
@@ -3139,7 +3263,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3153,11 +3277,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3169,11 +3311,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3193,18 +3348,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -3226,11 +3373,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3248,7 +3391,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3258,10 +3401,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -3280,11 +3419,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -3293,6 +3427,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -3307,28 +3446,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],
@@ -3338,7 +3462,7 @@
                 ]
             },
             {
-                "address": "0x830B3409e231b6449fa8CCaaf1a3E6d8bab9F5fd",
+                "address": "0xeD92D6f5e32110ee2C4A185D6D28B212c927426b",
                 "abi": [
                     {
                         "constant": false,
@@ -3348,7 +3472,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3362,11 +3486,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3378,11 +3520,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3402,18 +3557,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -3435,11 +3582,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3457,7 +3600,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3467,10 +3610,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -3489,11 +3628,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -3502,6 +3636,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -3516,28 +3655,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],
@@ -3547,7 +3671,7 @@
                 ]
             },
             {
-                "address": "0xe3B5E7F1202291bc39a21bd835E7d2ce65FED806",
+                "address": "0x8C96ab371f945EbF570B036Ee8f132551858f393",
                 "abi": [
                     {
                         "constant": false,
@@ -3557,7 +3681,7 @@
                                 "type": "uint256"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3571,11 +3695,29 @@
                         "constant": false,
                         "inputs": [
                             {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
                                 "name": "_causeName",
                                 "type": "bytes32"
                             },
                             {
-                                "name": "_score",
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3587,11 +3729,24 @@
                     },
                     {
                         "constant": true,
-                        "inputs": [],
-                        "name": "maxVotes",
-                        "outputs": [
+                        "inputs": [
                             {
                                 "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
                                 "type": "uint256"
                             }
                         ],
@@ -3611,18 +3766,10 @@
                     {
                         "constant": true,
                         "inputs": [],
-                        "name": "caster",
+                        "name": "maxVoteCount",
                         "outputs": [
                             {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_maxVotes",
-                                "type": "uint256"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "",
                                 "type": "uint256"
                             }
                         ],
@@ -3644,11 +3791,7 @@
                                 "type": "address[]"
                             },
                             {
-                                "name": "_scores",
-                                "type": "uint256[]"
-                            },
-                            {
-                                "name": "_votes",
+                                "name": "_voteCounts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3666,7 +3809,7 @@
                                 "type": "uint256[]"
                             },
                             {
-                                "name": "_scores",
+                                "name": "_counts",
                                 "type": "uint256[]"
                             }
                         ],
@@ -3676,10 +3819,6 @@
                     },
                     {
                         "inputs": [
-                            {
-                                "name": "_maxScore",
-                                "type": "uint256"
-                            },
                             {
                                 "name": "_fundraiser",
                                 "type": "address"
@@ -3698,11 +3837,6 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
@@ -3711,6 +3845,11 @@
                                 "indexed": false,
                                 "name": "_causeName",
                                 "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
                             }
                         ],
                         "name": "CastName",
@@ -3725,28 +3864,13 @@
                                 "type": "address"
                             },
                             {
-                                "indexed": false,
-                                "name": "_score",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_votes",
-                                "type": "uint256"
-                            },
-                            {
                                 "indexed": true,
                                 "name": "_causeIndex",
                                 "type": "uint256"
                             },
                             {
                                 "indexed": false,
-                                "name": "_causeScores",
-                                "type": "uint256"
-                            },
-                            {
-                                "indexed": false,
-                                "name": "_causeVotes",
+                                "name": "_voteCount",
                                 "type": "uint256"
                             }
                         ],

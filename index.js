@@ -8,15 +8,12 @@ const circles = require('./lib/circles');
 const messages = require('@seedom-io/seedom-crypter/messages');
 const { createCanvas, loadImage, registerFont } = require('canvas');
 
+// filename
+const fileName = "badge.png";
+
 // size
 const canvasW = 1200;
 const canvasH = 628;
-
-// base urls
-const badgeUrl = 'https://raw.githubusercontent.com/seedom-io/seedom-assets/master/badge/seedom-badge.png';
-
-// filename
-const fileName = "badge.png";
 
 // create circles
 const topCircle = circles.get(586, canvasW, canvasH);
@@ -27,8 +24,6 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
 
 (async () => {
 
-    // download badge image
-    const badgeImage = await download.image(badgeUrl);
     // load configs
     const config = {
         networks: await file.readJson('./config/networks.json'),
@@ -102,14 +97,14 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
         // setup canvas
         const canvas = createCanvas(canvasW, canvasH);
         const context = canvas.getContext('2d');
-        // draw badge & cause
-        context.drawImage(badgeImage, 0, 0, badgeImage.width, badgeImage.height);
-        context.drawImage(networkCause.image, 412, 115, networkCause.image.width, networkCause.image.height);
+        // draw badge & logo
+        context.drawImage(networkCause.badge, 0, 0, networkCause.badge.width, networkCause.badge.height);
+        context.drawImage(networkCause.logo, 412, 115, networkCause.logo.width, networkCause.logo.height);
 
         // draw participant message
         context.fillStyle = 'white';
         context.font = '36px CamphorPro';
-        draw.wrapText(context, participantMessage, 46, 80, 204, 37);
+        draw.wrapText(context, participantMessage, 46, 80, 215, 37);
 
         // draw deployment end time
         context.textAlign = 'right'; 
