@@ -2,7 +2,7 @@
     "localhost": {
         "fundraiser": [
             {
-                "address": "0x1c49b89ca12Ecd3B5Ccd3625bBD312f807Da08DA",
+                "address": "0xA06da54f4c693A5ADDD7B9A895FE78441Ddb136B",
                 "abi": [
                     {
                         "constant": true,
@@ -439,7 +439,7 @@
                 ]
             },
             {
-                "address": "0x49cB236dc29fB49395253640Dd835eFb0B0471E4",
+                "address": "0x4d62B82309f8CD3CbeFC008437f6197873098f3D",
                 "abi": [
                     {
                         "constant": true,
@@ -876,7 +876,7 @@
                 ]
             },
             {
-                "address": "0xA6C690836ADA4C134de6b937713809A1829FE193",
+                "address": "0xA8A27014CF97F846aCc5ae90CfF06b04A50c74d4",
                 "abi": [
                     {
                         "constant": true,
@@ -1313,7 +1313,7 @@
                 ]
             },
             {
-                "address": "0x8dDf60E00DB1db7f9370d0b88420A04C95642c26",
+                "address": "0x5ccCc3c0C693AFC3cC52506459E662A44E663ad7",
                 "abi": [
                     {
                         "constant": true,
@@ -1750,7 +1750,7 @@
                 ]
             },
             {
-                "address": "0xd442431d26adB8a2E8e200835E086a50508Bc117",
+                "address": "0x91Aa77a7923d55858a3B70eC2102A9e73486bd50",
                 "abi": [
                     {
                         "constant": true,
@@ -2187,7 +2187,7 @@
                 ]
             },
             {
-                "address": "0x591aD1f36Bb5578Ea02bF05510bF79D24624026f",
+                "address": "0x4855d471DdF409f62317D52782677500fe20D0bF",
                 "abi": [
                     {
                         "constant": true,
@@ -2626,7 +2626,7 @@
         ],
         "polling": [
             {
-                "address": "0x31839c962D26F31737B1b55F66ee1DD014094E2f",
+                "address": "0x6EA4f994328Ee6fBEbD38aa83898879ff6e413DB",
                 "abi": [
                     {
                         "constant": false,
@@ -2835,7 +2835,7 @@
                 ]
             },
             {
-                "address": "0x0a02BE22409401236e27F8fc7b6628a14d3FF999",
+                "address": "0xA8E1Ca221caa694e51fC3539bbE95f0f2EA70156",
                 "abi": [
                     {
                         "constant": false,
@@ -3044,7 +3044,7 @@
                 ]
             },
             {
-                "address": "0x6b3406FF342966a450E77D477aea4AB46C826d10",
+                "address": "0x664F67158046ADdd500d79EBAa0FC9b6d414995B",
                 "abi": [
                     {
                         "constant": false,
@@ -3253,7 +3253,7 @@
                 ]
             },
             {
-                "address": "0x9547E29Fe6b10806Db1C51528A9B67AEfDa6A437",
+                "address": "0xC9F2406C4eF477d970D2fEbA196E812FE1aD0BeA",
                 "abi": [
                     {
                         "constant": false,
@@ -3462,7 +3462,7 @@
                 ]
             },
             {
-                "address": "0x53228F279acf5c2484E8619501Dd4c2b18911518",
+                "address": "0xCab7709F56AE694375dE2BFbb5F28853617d33Fa",
                 "abi": [
                     {
                         "constant": false,
@@ -3671,7 +3671,7 @@
                 ]
             },
             {
-                "address": "0x7E703F90D8E70AbA8443FA897ec117D6b8882cD2",
+                "address": "0x702FF61041785510bBaE04c695Df7ba1B6F0AFa9",
                 "abi": [
                     {
                         "constant": false,
@@ -4761,6 +4761,656 @@
                             }
                         ],
                         "name": "Withdrawal",
+                        "type": "event"
+                    }
+                ]
+            }
+        ],
+        "fundraiser": [
+            {
+                "address": "0x5f78a0BB08C7679729bA1816BA1A050E3907b348",
+                "abi": [
+                    {
+                        "constant": true,
+                        "inputs": [
+                            {
+                                "name": "",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "participants",
+                        "outputs": [
+                            {
+                                "name": "_message",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_entries",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_message",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "participate",
+                        "outputs": [],
+                        "payable": true,
+                        "stateMutability": "payable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_token",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "recover",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "deployment",
+                        "outputs": [
+                            {
+                                "name": "_cause",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_participantSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_owner",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerSecret",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_valuePerEntry",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_deployTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_endTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_expireTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_destructTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_entropy",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "withdraw",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_message",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "end",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_message",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "reveal",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_secret",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "begin",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "destroy",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "balance",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "state",
+                        "outputs": [
+                            {
+                                "name": "_causeSecret",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_causeMessage",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_causeWithdrawn",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "_participant",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_participantMessage",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_participantWithdrawn",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "_ownerMessage",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_ownerWithdrawn",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "_cancelled",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "_participants",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_entries",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "cancel",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "name": "_cause",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeWallet",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_causeSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_participantSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerWallet",
+                                "type": "address"
+                            },
+                            {
+                                "name": "_ownerSplit",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_ownerSecret",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_valuePerEntry",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_endTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_expireTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_destructTime",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_entropy",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "payable": true,
+                        "stateMutability": "payable",
+                        "type": "fallback"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_causeSecret",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "Beginning",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_participant",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_message",
+                                "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_entries",
+                                "type": "uint256"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_refund",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Participation",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_participant",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_entries",
+                                "type": "uint256"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_refund",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "Raise",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_causeMessage",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "Revelation",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_participant",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_participantMessage",
+                                "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_causeMessage",
+                                "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_ownerMessage",
+                                "type": "bytes32"
+                            }
+                        ],
+                        "name": "Selection",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [],
+                        "name": "Cancellation",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": false,
+                                "name": "_address",
+                                "type": "address"
+                            }
+                        ],
+                        "name": "Withdrawal",
+                        "type": "event"
+                    }
+                ]
+            }
+        ],
+        "polling": [
+            {
+                "address": "0xd665978a287bd8Cd929993E5602e161bA3dD181a",
+                "abi": [
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_voteIndex",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [
+                            {
+                                "name": "_causeName",
+                                "type": "bytes32"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "voteName",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [
+                            {
+                                "name": "",
+                                "type": "address"
+                            },
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "_participants",
+                        "outputs": [
+                            {
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "name": "_count",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": false,
+                        "inputs": [],
+                        "name": "destroy",
+                        "outputs": [],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "maxVoteCount",
+                        "outputs": [
+                            {
+                                "name": "",
+                                "type": "uint256"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "causes",
+                        "outputs": [
+                            {
+                                "name": "_names",
+                                "type": "bytes32[]"
+                            },
+                            {
+                                "name": "_casters",
+                                "type": "address[]"
+                            },
+                            {
+                                "name": "_voteCounts",
+                                "type": "uint256[]"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "constant": true,
+                        "inputs": [],
+                        "name": "votes",
+                        "outputs": [
+                            {
+                                "name": "_causeIndexes",
+                                "type": "uint256[]"
+                            },
+                            {
+                                "name": "_counts",
+                                "type": "uint256[]"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "view",
+                        "type": "function"
+                    },
+                    {
+                        "inputs": [
+                            {
+                                "name": "_fundraiser",
+                                "type": "address"
+                            }
+                        ],
+                        "payable": false,
+                        "stateMutability": "nonpayable",
+                        "type": "constructor"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "name": "_caster",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_causeName",
+                                "type": "bytes32"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "CastName",
+                        "type": "event"
+                    },
+                    {
+                        "anonymous": false,
+                        "inputs": [
+                            {
+                                "indexed": true,
+                                "name": "_caster",
+                                "type": "address"
+                            },
+                            {
+                                "indexed": true,
+                                "name": "_causeIndex",
+                                "type": "uint256"
+                            },
+                            {
+                                "indexed": false,
+                                "name": "_voteCount",
+                                "type": "uint256"
+                            }
+                        ],
+                        "name": "CastIndex",
                         "type": "event"
                     }
                 ]
