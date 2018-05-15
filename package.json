@@ -24,8 +24,8 @@
     "mz": "^2.7.0",
     "mz-modules": "^2.0.0",
     "request": "^2.85.0",
-    "web3": "1.0.0-beta.34",
+    "web3": "1.0.0-beta.33",
     "@seedom-io/seedom-crypter": "^1.0.0",
-    "@seedom-io/seedom-resolver": "^1.0.2"
+    "@seedom-io/seedom-resolver": "^1.0.3"
   }
 }
