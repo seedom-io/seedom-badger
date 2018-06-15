@@ -97,9 +97,9 @@ registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
         // setup canvas
         const canvas = createCanvas(canvasW, canvasH);
         const context = canvas.getContext('2d');
+        
         // draw badge & logo
         context.drawImage(networkCause.badge, 0, 0, networkCause.badge.width, networkCause.badge.height);
-        context.drawImage(networkCause.logo, 412, 115, networkCause.logo.width, networkCause.logo.height);
 
         // draw participant message
         context.fillStyle = 'white';
