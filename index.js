@@ -14,7 +14,7 @@ const fileName = "badge.png";
 
 // size
 const canvasW = 1200;
-const canvasH = 628;
+const canvasH = 630;
 
 // create circles
 const topCircle = circles.get(586, canvasW, canvasH);
