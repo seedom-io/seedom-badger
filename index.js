@@ -1,4 +1,5 @@
 const express = require('express');
+const compression = require('compression');
 const app = express();
 const file = require('./lib/file');
 const download = require('./lib/download');
@@ -21,6 +22,9 @@ const bottomCircle = circles.get(606, canvasW, canvasH);
 
 // register font
 registerFont('./fonts/CamphorPro.ttf', {family: 'CamphorPro'});
+
+// use compression
+app.use(compression());
 
 (async () => {
 

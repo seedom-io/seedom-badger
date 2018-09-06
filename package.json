@@ -18,14 +18,15 @@
   },
   "homepage": "https://github.com/seedom-io/seedom-badger#readme",
   "dependencies": {
+    "@seedom-io/seedom-crypter": "^1.0.0",
+    "@seedom-io/seedom-resolver": "^1.0.3",
     "canvas": "^2.0.0-alpha.12",
+    "compression": "^1.7.3",
     "express": "^4.16.3",
     "moment-timezone": "^0.5.16",
     "mz": "^2.7.0",
     "mz-modules": "^2.0.0",
     "request": "^2.85.0",
-    "web3": "1.0.0-beta.33",
-    "@seedom-io/seedom-crypter": "^1.0.0",
-    "@seedom-io/seedom-resolver": "^1.0.3"
+    "web3": "1.0.0-beta.33"
   }
 }
