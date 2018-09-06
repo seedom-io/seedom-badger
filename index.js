@@ -123,7 +123,7 @@ app.use(compression());
 
         // pipe back out
         const stream = canvas.createPNGStream();
-        response.set('Content-Disposition', `attachment;filename=${fileName}`);
+        //response.set('Content-Disposition', `attachment;filename=${fileName}`);
         response.type('png');
         stream.pipe(response);
     });
