@@ -4,11 +4,11 @@
         "wsUrl": "ws://localhost:8546"
     },
     "mainnet": {
-        "rpcUrl": "https://manager1.seedom.io:8549",
-        "wsUrl": "wss://manager1.seedom.io:8550"
+        "rpcUrl": "https://mainnet.infura.io/8db21cc2d49c421081900bb238f2f05c",
+        "wsUrl": "wss://mainnet.infura.io/ws"
     },
     "ropsten": {
-        "rpcUrl": "https://manager1.seedom.io:8547",
-        "wsUrl": "wss://manager1.seedom.io:8548"
+        "rpcUrl": "https://storage1.seedom.io:8545",
+        "wsUrl": "wss://storage1.seedom.io:8546"
     }
 }
